@@ -16,3 +16,8 @@ print(df.iloc[0])     #index based """
 # Filtering Data
 """ print([df["C"]>80])   #single condition
 print((df["C"]>90) & (df["TOTAL ATTENDANCE"]>90)) #multiple conditions """
+# Adding new column
+# print(df["AI"])="studentsdata"  #error
+# print((df["RESULT"])=df["TOTAL"].apply(lamda x: "PASS" if x>=150 else "FAIL")) #error
+print(df.loc[1, "FSD"]) = 96
+print(df)
